@@ -9,5 +9,6 @@ class NamesTestCase(unittest.TestCase):
         formatted_name = get_formatted_name('connor', 'macgregor')
         self.assertEquals(formatted_name, 'Connor Macgregor')
 
+
 if __name__ == '__main__':
     unittest.main()
