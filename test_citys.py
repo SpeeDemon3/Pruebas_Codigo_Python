@@ -15,5 +15,10 @@ class CitysTestCase(unittest.TestCase):
         formatted_city_people = get_formatted_city_people('madrid', 'spain', 1000000)
         self.assertEquals(formatted_city_people, 'Madrid - Spain - People 1000000')
 
+    def test_get_formatted_city_people_2(self):
+        """¿La salida es correcta capitalizando la primera letra de cada palabra y los numeros correcta?"""
+        formatted_city_people = get_formatted_city_people('madrid', 'spain')
+        self.assertEquals(formatted_city_people, 'Madrid - Spain')
+
 if __name__ == '__main__':
     unittest.main()
